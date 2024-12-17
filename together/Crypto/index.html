@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เครื่องคำนวณค่าเงินคริปโต</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ส่วนของ Header -->
+    <div class="header">
+        <a href="../Crypto/index.html">คำนวณค่าเงินคริปโต</a>
+        <a href="../tariff/index.html">คำนวณภาษีรถนำเข้า</a>
+        <a href="../Taxi/index.html">คำนวณค่าแท็กซี่</a>
+    </div>
+
+    <!-- ส่วนของ Calculator -->
+    <div class="calculator">
+        <h1>เครื่องคำนวณค่าเงินคริปโต</h1>
+        <label for="amount">จำนวนเงิน (บาท):</label>
+        <input type="number" id="amount" placeholder="ใส่จำนวนเงิน" oninput="calculateCrypto()">
+        
+        <label for="crypto">เลือกคริปโต:</label>
+        <select id="crypto" onchange="calculateCrypto()">
+            <option value="btc">Bitcoin (BTC)</option>
+            <option value="eth">Ethereum (ETH)</option>
+            <option value="xrp">Ripple (XRP)</option>
+        </select>
+        
+        <div class="result">
+            <p id="cryptoAmount">จำนวนที่คุณสามารถซื้อได้:</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

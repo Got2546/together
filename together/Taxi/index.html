@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณค่าแท็กซี่</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="../Crypto/index.html">คำนวณค่าเงินคริปโต</a>
+        <a href="../tariff/index.html">คำนวณภาษีรถนำเข้า</a>
+        <a href="../Taxi/index.html">คำนวณค่าแท็กซี่</a>
+    </div>
+
+    <div class="container">
+        <h1>คำนวณค่าแท็กซี่</h1>
+        <form id="taxi-form">
+            <label for="distance">ระยะทาง (กม.):</label>
+            <input type="number" id="distance" placeholder="ระยะทางที่เดินทาง" required>
+
+            <label for="time">เวลาที่รอ (นาที):</label>
+            <input type="number" id="time" placeholder="เวลาที่รอในระหว่างทาง" required>
+
+            <button type="submit">คำนวณค่าโดยสาร</button>
+        </form>
+        <div id="result" class="result">
+            <p>ค่าโดยสารทั้งหมด: <span id="totalFare">0</span> บาท</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
